@@ -1,0 +1,178 @@
+Scene 
+{
+  Image.Width = 1280; 
+  Image.Height = 960;   
+  
+  NumberOfMaterials = 6; 
+  NumberOfSpheres = 4;
+  NumberOfLights = 2; 
+  NumberOfPlanes = 1;
+
+  NumberOfDiscs = 0;
+  NumberOfTriangles = 0;
+}
+
+Material0
+{
+  Diffuse = 1.0, 0.0, 0.0;
+  Reflection = 0.3;
+  Specular = 1.0;
+  Power = 2.0;
+  Mode = 2;
+}
+
+Material1
+{
+  Diffuse = 0.0, 1.0, 0.0;
+  Reflection = 0.3;
+  Specular = 1.0;
+  Power = 0.0;
+  Mode = 2;
+}
+
+Material2
+{
+  Diffuse = 0.0, 0.0, 1.0;
+  Reflection = 0.3;
+  Specular = 1.0;
+  Power = 0.0;
+  Mode = 2;
+}
+
+Material3
+{
+  Diffuse = 1.0, 1.0, 0.0;
+  Reflection = 0.3;
+  Specular = 1.0;
+  Power = 0.0;
+  Mode = 2;
+}
+
+Material4
+{
+  Diffuse = 0.0, 1.0, 1.0;
+  Reflection = 0.3;
+  Specular = 3.0;
+  Power = 0.0;
+  Mode = 0;
+}
+Material5
+{
+  Diffuse = 0.6, 0.6, 0.6;
+  Reflection = 0.3;
+  Specular = 0.0;
+  Power = 0.0;
+  Mode = 2;
+}
+
+Sphere0
+{
+  Center = 640, 480, 0.0;  
+  Size = 125.0;
+  Material.Id = 0;
+}
+
+Sphere1
+{
+  Center = 552.5, 626.4, 0.0;
+  Size = 50.0;
+  Material.Id = 1;
+}
+
+Sphere2
+{
+  Center = 727.5, 626.4, 0.0;  
+  Size = 50.0;
+  Material.Id = 2;
+}
+
+Sphere3
+{
+  Center = 640.0, 325.0, 0.0;  
+  Size = 175;
+  Material.Id = 3;
+}
+
+Sphere4
+{
+  Center = 515.0, 696.5, 0.0;  
+  Size = 50.0;
+  Material.Id = 1;
+}
+
+Sphere5
+{
+  Center = 765.0, 263.5, 0.0;  
+  Size = 50.0;
+  Material.Id = 2;
+}
+
+Sphere6
+{
+  Center = 515.0, 263.5, 0.0;  
+  Size = 50.0;
+  Material.Id = 3;
+}
+
+
+Plane0
+{
+  Point = 640.0, 480.0, 0.0;
+  Normal = -0.0, 0.0, -1.0;
+  Material.Id = 5;
+}
+
+Triangle0
+{
+  Point0 = 515.0, 263.0, 0.0;
+  Point1 = 765.0, 263.0, 0.0;
+  Point2 = 640.0, 480.0, 0.0;
+  Material.Id = 3;
+}
+
+Triangle1
+{
+  Point0 = 640.0, 480.0, 0.0;
+  Point1 = 890.0, 480.0, 0.0;
+  Point2 = 765.0, 696.0, 0.0;
+  Material.Id = 5;
+}
+
+Triangle2
+{
+  Point0 = 390.0, 480.0, 0.0;
+  Point1 = 640.0, 480.0, 0.0;
+  Point2 = 515.0, 696.0, 0.0;
+  Material.Id = 5;
+}
+
+
+Disc0
+{
+	Center = 640.0, 480.0, 500.0;  
+  Size = 300.0;
+  Normal = 0.0, -0.0, -1.0;
+  Material.Id = 4;
+}
+
+Light0
+{
+  Position = 1040.0, 240.0, -10000.0; 
+  Intensity = 1.0, 1.0, 1.0;
+}
+
+Light1
+{
+  Position = 0.0, 240.0, -800.0;  
+  Intensity = 0.7, 0.7, 0.7 ;
+}
+
+Camera
+{
+	Horizontal = 0.0;
+	Vertical = 0.0;
+	Depth = 0.0;
+	Rotate = 0.0, -0, -0;
+
+}
+
